@@ -1,0 +1,7 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		NoRemove {907A3056-100B-4190-B989-B15884F7E6AF} = s 'Connect Class'
+	}	
+}

@@ -1,0 +1,34 @@
+// OutlookAddinProject.idl : IDL source for OutlookAddinProject
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (OutlookAddinProject.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(ECD05AE6-3412-4407-A6BA-1298AB865916),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IConnect32 : IDispatch{
+};
+[
+	uuid(81D490E6-355B-4ED5-BA2F-24B175068BD5),
+	version(1.0),
+]
+library OutlookAddinLib32
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(2B274807-B9AC-471A-B643-68C0FDFD5CB0)		
+	]
+	coclass Connect32
+	{
+		[default] interface IConnect32;
+	};
+};
+

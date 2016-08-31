@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{e80a8a1c-a709-49d3-8144-9cf58278f0ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Mails">
+      <UniqueIdentifier>{df2cdbfa-e382-4f86-afc2-4ffbc11f98db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{1c06c749-2049-444f-bb5d-ba3c577c6ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Generated Files">
+      <UniqueIdentifier>{41561a77-8101-4463-8b74-dab43e4618e0}</UniqueIdentifier>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Common\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Common\Utils">
+      <UniqueIdentifier>{23d1cee8-9790-4499-b0f3-a1a5b71c6a94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Resource Files\32">
+      <UniqueIdentifier>{e3476ac0-5e00-41c7-9d73-4b7aa44771ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Resource Files\64">
+      <UniqueIdentifier>{d1f8b8aa-75da-4346-bd1e-80394f5ee033}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OutlookAddinProject.cpp">
+      <Filter>Common\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Connect.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlookAddinProject32_i.c">
+      <Filter>Core\Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlookAddinProject64_i.c">
+      <Filter>Core\Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreCompiled.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Serializator.cpp">
+      <Filter>Common\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlookMailProcesser.cpp">
+      <Filter>Core\Mails</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Common\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="OutlookInstanceStorage.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MAPIFolder.cpp">
+      <Filter>Core\Mails</Filter>
+    </ClCompile>
+    <ClCompile Include="UserFoldersStorage.cpp">
+      <Filter>Core\Mails</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Connect.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlookAddinProject32_i.h">
+      <Filter>Core\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlookAddinProject64_i.h">
+      <Filter>Core\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreCompiled.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializator.h" />
+    <ClInclude Include="OutlookMailProcesser.h">
+      <Filter>Core\Mails</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utf8Codecvt.h">
+      <Filter>Common\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="OutlookInstanceStorage.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MAPIFolder.h">
+      <Filter>Core\Mails</Filter>
+    </ClInclude>
+    <ClInclude Include="UserFoldersStorage.h">
+      <Filter>Core\Mails</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OutlookAddinProject.def">
+      <Filter>Common\Source Files</Filter>
+    </None>
+    <None Include="Connect.rgs">
+      <Filter>Common\Resource Files</Filter>
+    </None>
+    <None Include="OutlookAddinProject32.rgs">
+      <Filter>Common\Resource Files\32</Filter>
+    </None>
+    <None Include="OutlookAddinProject64.rgs">
+      <Filter>Common\Resource Files\64</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OutlookAddinProject32.rc">
+      <Filter>Common\Resource Files\32</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="OutlookAddinProject64.rc">
+      <Filter>Common\Resource Files\64</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="OutlookAddinProject32.idl">
+      <Filter>Common\Resource Files\32</Filter>
+    </Midl>
+    <Midl Include="OutlookAddinProject64.idl">
+      <Filter>Common\Resource Files\64</Filter>
+    </Midl>
+  </ItemGroup>
+</Project>

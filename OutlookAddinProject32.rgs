@@ -1,0 +1,74 @@
+HKCR
+{
+	OutlookAddin32.Connect.1 = s 'Connect Class'
+	{
+		CLSID = s '{2B274807-B9AC-471A-B643-68C0FDFD5CB0}'
+	}
+	OutlookAddin32.Connect = s 'Connect Class'
+	{
+		CurVer = s 'OutlookAddin32.Connect.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2B274807-B9AC-471A-B643-68C0FDFD5CB0} = s 'Connect Class'
+		{
+			ProgID = s 'OutlookAddin32.Connect.1'
+			VersionIndependentProgID = s 'OutlookAddin32.Connect'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{81D490E6-355B-4ED5-BA2F-24B175068BD5}'
+			Version = s '1.0'
+		}
+	}	
+}
+HKCU
+{
+	NoRemove Software
+	{	
+		NoRemove Microsoft
+		{
+			NoRemove Office
+			{
+				NoRemove Outlook
+				{
+					NoRemove Addins
+		            {
+						ForceRemove OutlookAddin32.Connect
+						{
+							val Description = s 'Outlook Add-in'
+							val FriendlyName = s 'Outlook Add-in'
+							val LoadBehavior = d 3
+						}
+					}
+				}
+			}
+		}
+	}
+}
+HKLM
+{
+	NoRemove Software
+	{	
+		NoRemove Microsoft
+		{
+			NoRemove Office
+			{
+				NoRemove Outlook
+				{
+					NoRemove Addins
+		            {
+						ForceRemove OutlookAddin32.Connect
+						{
+							val Description = s 'Outlook Add-in'
+							val FriendlyName = s 'Outlook Add-in'
+							val LoadBehavior = d 3
+						}
+					}
+				}
+			}
+		}
+	}
+}
